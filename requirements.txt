@@ -1,0 +1,7 @@
+openai
+Pillow
+pyperclip
+openai-whisper
+ibm_watson
+requests
+streamlit

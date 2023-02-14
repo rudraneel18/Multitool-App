@@ -1,5 +1,3 @@
-import openai
-import streamlit as st
 from imports.imports import *
 model_engine = "text-davinci-002"
 

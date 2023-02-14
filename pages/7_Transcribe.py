@@ -1,7 +1,6 @@
-model = whisper.load_model("base")
 from imports.imports import *
 # load audio and pad/trim it to fit 30 seconds
-
+model = whisper.load_model("base")
 st.file_uploader("Upload Audio", type=["mp3", "wav"])
 audio = whisper.load_audio("audio.mp3")
 audio = whisper.pad_or_trim(audio)
