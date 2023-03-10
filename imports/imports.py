@@ -9,15 +9,15 @@ import os
 import time
 import pyperclip
 import whisper
-
+from gtts import gTTS
 
 def get_response(prompt):
     response = openai.Completion.create(
-        engine="text-davinci-003",
+        engine="text-davinci-002",
         prompt=prompt,
         max_tokens=2048,
         temperature=0.75,)
-    return response["choices"][0]["text"]
+    return response.choices[0].text.strip()
 
 
 def copy_to_clipboard(txt):
